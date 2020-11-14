@@ -7,9 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css"/>
   <script src="https://kit.fontawesome.com/71ff812372.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Nunito:wght@400;700&display=swap"
     rel="stylesheet">
+  <script src="js/wow.min.js"></script>
+  <script src="js/mail.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 
 </head>
 
@@ -38,7 +44,7 @@
     <ul>
       <li><span>&times;</span><a href="#start" data-text="Home">Home</a></li>
       <li><span>&times;</span><a href="#omnie" data-text="About">About</a></li>
-      <li><span>&times;</span><a href="#serv" data-text="Services">Services</a></li>
+      <li><span>&times;</span><a href="#exam" data-text="Works">Works</a></li>
       <li><span>&times;</span><a href="#cont" data-text="Contact">Contact</a></li>
     </ul>
   </div>
@@ -48,45 +54,38 @@
       <div class="home-content">
         <div class="home-items">
           <div class="home-title">
-            <h1>Responsive Side Menu</h1>
+            <h1 class="wow fadeInRightBig">The page is currently under development</h1>
           </div>
           <div class="home-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis pariatur neque facere
-              voluptatum
-              recusandae dolorum nostrum, fuga hic sapiente.</p>
+            <p class="wow fadeInRight">Responsive Design, HTML, CSS, jQuery</p>
+            
           </div>
-          <div class="btn-more">
-            <a href="">More</a>
+          <div class="btn-more wow fadeInUp">
+            <a href="#omnie">More</a>
           </div>
         </div>
-
-
       </div>
 
-
-
-
-
       <div class="about" id="omnie">
-        <h1>About</h1>
+        <h1 class="wow fadeInRightBig">About</h1>
         <div class="about-content">
-          <div class="about-items">
+          <div class="about-items wow fadeInLeft">
             <div class="about-image">
               <img src="images/logo/ava.jpg" alt="">
             </div>
             <div class="about-social">
               <ul class="sci">
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fab fa-github-square"></i></a></li>
-                <li><a href="https://www.facebook.com/PinchTwistPl"><i class="fab fa-facebook-square"></i></a></li>
-                <li><a href="https://www.instagram.com/pinchtwistpl/"><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/isk3lo/"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/Iskelo/"><i class="fab fa-github-square"></i></a></li>
+                <li><a href="https://www.facebook.com/lex.kapturevski/"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://www.instagram.com/isk3lo/"><i class="fab fa-instagram-square"></i></a></li>
 
               </ul>
             </div>
           </div>
 
           <div class="about-text">
-            <p>Hi! I am Oleksii Kapturevskyi, a web developer focused on crafting great web experiences. Coding have
+            <p class="wow fadeInRight">Hi! I am Oleksii Kapturevskyi, a web developer focused on crafting great web experiences. Coding have
               been my passion since the days I started working with computers but I found myself into web development
               since 2018. I enjoy creating beautifully designed, intuitive and functional websites.
             </p>
@@ -94,98 +93,162 @@
         </div>
       </div>
     </div>
-    <div class="services" id="serv">
-      <div class="services-title">
-        <h1>Services</h1>
-      </div>
 
+    <!-- Skills -->
+    <div class="services" id="serv">
       <div class="skills">
-        <div class="flip-card">
+        <div class="flip-card wow fadeInLeft">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="images/gallery/appDev.png" alt="Avatar" style="width:250px;height:250px;">
+              <img src="images/gallery/appDev.png" alt="Avatar">
             </div>
             <div class="flip-card-back">
               <h1>Mobile Apps</h1>
               <p>Flutter & Dart</p>
-              <p>Skils:</p>
+
             </div>
           </div>
         </div>
-        <div class="flip-card">
+        <div class="flip-card wow fadeInUp">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="images/gallery/coding.png" alt="Avatar" style="width:250px;height:250px;">
+              <img src="images/gallery/coding.png" alt="Avatar">
             </div>
             <div class="flip-card-back">
               <h1>Creating <br> Websites</h1>
-              <p>HTML, CSS, SASS, JS, PHP</p>
-              <p>Skils:</p>
+              <p>HTML, CSS, jQuery</p>
             </div>
           </div>
         </div>
-        <div class="flip-card">
+        <div class="flip-card wow fadeInRight">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="images/gallery/webDesign.png" alt="Avatar" style="width:250px;height:250px;">
+              <img src="images/gallery/webDesign.png" alt="Avatar">
             </div>
             <div class="flip-card-back">
               <h1>Web Design</h1>
-              <p>Adobe Photoshop, Adobe Ilustrator</p>
-              <p>Skils:</p>
+              <p>Adobe Photoshop,<br> Adobe Ilustrator</p>
+
             </div>
           </div>
         </div>
 
       </div>
     </div>
-    <div class="contact" id="cont">
-      <div class="contact-title">
-        <h1>Contact</h1>
+    <!-- Skills end-->
+    <!-- Works -->
+    <div class="works wow fadeInUpBig" id="exam">
+      <div class="works-title">
+        <h1 class="wow fadeInRightBig">Examples</h1>
+      </div>
+      <div class="examples">
+        <div class="work-card">
+
+          <img class="img-card" src="images/gallery/fs.jpg" alt="">
+
+          <div class="cards-items">
+            <h1>Fotostudio</h1>
+            <p>First version</p>
+            <a href="https://iskelo.github.io/fotostudio.github.io/">More</a>
+          </div>
+        </div>
+        <div class="work-card">
+
+          <img class="img-card" src="images/gallery/fs2.jpg" alt="">
+
+          <div class="cards-items">
+            <h1>Fotostudio</h1>
+            <p>Second version</p>
+            <a href="https://www.fotostudiozogrodem.pl/">More</a>
+          </div>
+        </div>
+        <div class="work-card">
+
+          <img class="img-card" src="images/gallery/PT.jpg" alt="">
+
+          <div class="cards-items">
+            <h1>PinchTwist</h1>
+            <p>Ballons side</p>
+            <a href="https://iskelo.github.io/PinchTwist.github.io/">More</a>
+          </div>
+        </div>
+        <div class="work-card">
+
+          <img class="img-card" src="images/gallery/web.jpg" alt="">
+
+          <div class="cards-items">
+            <h1>Bussines side </h1>
+            <p>First side</p>
+            <a href="https://iskelo.github.io/web/">More</a>
+          </div>
+        </div>
       </div>
 
-      <div class="contact-content">
+
+      <!-- <div class="container">
+        <img src="img_avatar.png" alt="Avatar" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text">John Doe</div>
+        </div>
+      </div> -->
+    </div>
+
+
+    <!-- Contact -->
+    <div class="contact" id="cont">
+      <div class="contact-title">
+        <h1 class="wow fadeInRightBig">Contact</h1>
+      </div>
+
+      <div class="contact-content wow fadeInUp">
         <div class="contact-form">
-          <form action="">
+          <form action="#" id="form" class="form__body">
             <h2>Send Messange</h2>
             <div class="input-box">
-              <textarea name="" placeholder="Write your message here"></textarea>
+              <textarea name="message" id="formMessage" class="form__input" placeholder="Write your message here"></textarea>
             </div>
             <h2>About You</h2>
             <div class="about-you">
               <div class="input-box">
-                <input type="text" name="" placeholder="Full Name">
+                <input id="formName" class="form__input _req" type="text" name="name" placeholder="Full Name">
               </div>
               <div class="input-box">
-                <input type="text" name="" placeholder="Email Adres">
+                <input id="formEmail" class="form__input _req _email" type="text" name="email" placeholder="Email Adres">
               </div>
             </div>
+            <div class="checkbox">
+              <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+              <label for="formAgreement" class="checkbox__label">I agree</label>
+            </div>
             <div class="sub">
+              <!-- <button type="submit">Send</button> -->
               <div class="contact-btn">
                 <div class="submit-button">
                   <input type="submit" value="Send">
                 </div>
-
-
               </div>
               <div class="contact-social">
                 <ul class="sci">
-                  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                  <li><a href="#"><i class="fab fa-github-square"></i></a></li>
-                  <li><a href="https://www.facebook.com/PinchTwistPl"><i class="fab fa-facebook-square"></i></a></li>
-                  <li><a href="https://www.instagram.com/pinchtwistpl/"><i class="fab fa-instagram-square"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/isk3lo/"><i class="fab fa-linkedin"></i></a></li>
+                  <li><a href="https://github.com/Iskelo/"><i class="fab fa-github-square"></i></a></li>
+                  <li><a href="https://www.facebook.com/lex.kapturevski/"><i class="fab fa-facebook-square"></i></a>
+                  </li>
+                  <li><a href="https://www.instagram.com/isk3lo/"><i class="fab fa-instagram-square"></i></a></li>
 
                 </ul>
               </div>
             </div>
+            
 
 
           </form>
         </div>
       </div>
     </div>
+
+    <!-- Contact  end-->
     <footer>
-      <h1>Copyright Isk3lo</h1>
+      <h1>Copyright © 2020 Isk3lo</h1>
     </footer>
   </div>
 
@@ -193,10 +256,11 @@
 
 
 
-
-
-  <script src="js/script.js"></script>
+  
   <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/script.js"></script>
+  
+
 </body>
 
 </html>
