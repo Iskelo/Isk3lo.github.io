@@ -2,73 +2,201 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-	<title>Portfolio</title>
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/71ff812372.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Nunito:wght@400;700&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#!" onclick="openSlideMenu(x)">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+        </svg>
+      </a>
+    </span>
 
-	<div class="wrapper">
-		<div class="container">
-			<div class="menu__body">
-				<div class="logo">
-					<a href="#"><img src="img/logo/isk3lo.png" alt=""></a>
-				</div>
-				<div class="menu">
-					<ul>						
-						<li><a href="#">About</a></li>
-						<li><a href="#">Skills</a></li>
-						<li><a href="#">Works</a></li>	
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</div>
-				<div class="footer__menu">
-					<div class="icons1">
-					<a href="#"><img src="img/icons/face.png" alt=""></a>
-					</div>
-					<div class="icons2">
-						<a href="#"><img src="img/icons/insta.png" alt=""></a>
-					</div>
-					<div class="icons3">
-						<a href="#"><img src="img/icons/whats.png" alt=""></a>
-					</div>
-				</div>
+    <ul class="navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-			</div>
-			<section class="header__body">
+  <div id="side-menu" class="side-nav">
+    <a href="#!" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <ul>
+      <li><span>&times;</span><a href="#start" data-text="Home">Home</a></li>
+      <li><span>&times;</span><a href="#omnie" data-text="About">About</a></li>
+      <li><span>&times;</span><a href="#serv" data-text="Services">Services</a></li>
+      <li><span>&times;</span><a href="#cont" data-text="Contact">Contact</a></li>
+    </ul>
+  </div>
 
-				<div class="header__title">
-					<h1>About</h1>
-					<h2>About</h2>
-				</div>
-
-				<div class="header__image">
-					<img src="img/main/main.jpg" alt="">
-				</div>
-
-				<div class="header__text">
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius cumque et quia quidem itaque voluptatum molestiae doloribus beatae, dolores sed tenetur architecto similique fuga a consequuntur aliquid hic necessitatibus doloremque?</p>
-
-					<div class="btn"><a href="#">More</a></div>
-				</div>
-				
-			</section>
-		</div>
-	
-	</div>
-	
-	
+  <div id="main">
+    <div class="home" id="start">
+      <div class="home-content">
+        <div class="home-items">
+          <div class="home-title">
+            <h1>Responsive Side Menu</h1>
+          </div>
+          <div class="home-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis pariatur neque facere
+              voluptatum
+              recusandae dolorum nostrum, fuga hic sapiente.</p>
+          </div>
+          <div class="btn-more">
+            <a href="">More</a>
+          </div>
+        </div>
 
 
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script> -->
-	<!-- <script src="https://maps.google.com/maps/api/js?sensor=false&amp;key="></script> -->
-	<script src="script/script.js"></script>
+      </div>
 
 
-	
+
+
+
+      <div class="about" id="omnie">
+        <h1>About</h1>
+        <div class="about-content">
+          <div class="about-items">
+            <div class="about-image">
+              <img src="images/logo/ava.jpg" alt="">
+            </div>
+            <div class="about-social">
+              <ul class="sci">
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-github-square"></i></a></li>
+                <li><a href="https://www.facebook.com/PinchTwistPl"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://www.instagram.com/pinchtwistpl/"><i class="fab fa-instagram-square"></i></a></li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <p>Hi! I am Oleksii Kapturevskyi, a web developer focused on crafting great web experiences. Coding have
+              been my passion since the days I started working with computers but I found myself into web development
+              since 2018. I enjoy creating beautifully designed, intuitive and functional websites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="services" id="serv">
+      <div class="services-title">
+        <h1>Services</h1>
+      </div>
+
+      <div class="skills">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/gallery/appDev.png" alt="Avatar" style="width:250px;height:250px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Mobile Apps</h1>
+              <p>Flutter & Dart</p>
+              <p>Skils:</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/gallery/coding.png" alt="Avatar" style="width:250px;height:250px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Creating <br> Websites</h1>
+              <p>HTML, CSS, SASS, JS, PHP</p>
+              <p>Skils:</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/gallery/webDesign.png" alt="Avatar" style="width:250px;height:250px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Web Design</h1>
+              <p>Adobe Photoshop, Adobe Ilustrator</p>
+              <p>Skils:</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="contact" id="cont">
+      <div class="contact-title">
+        <h1>Contact</h1>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-form">
+          <form action="">
+            <h2>Send Messange</h2>
+            <div class="input-box">
+              <textarea name="" placeholder="Write your message here"></textarea>
+            </div>
+            <h2>About You</h2>
+            <div class="about-you">
+              <div class="input-box">
+                <input type="text" name="" placeholder="Full Name">
+              </div>
+              <div class="input-box">
+                <input type="text" name="" placeholder="Email Adres">
+              </div>
+            </div>
+            <div class="sub">
+              <div class="contact-btn">
+                <div class="submit-button">
+                  <input type="submit" value="Send">
+                </div>
+
+
+              </div>
+              <div class="contact-social">
+                <ul class="sci">
+                  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                  <li><a href="#"><i class="fab fa-github-square"></i></a></li>
+                  <li><a href="https://www.facebook.com/PinchTwistPl"><i class="fab fa-facebook-square"></i></a></li>
+                  <li><a href="https://www.instagram.com/pinchtwistpl/"><i class="fab fa-instagram-square"></i></a></li>
+
+                </ul>
+              </div>
+            </div>
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h1>Copyright Isk3lo</h1>
+    </footer>
+  </div>
+
+
+
+
+
+
+
+  <script src="js/script.js"></script>
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
 </body>
 
 </html>
