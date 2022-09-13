@@ -412,6 +412,8 @@ body {
 	}
 }
 
+
+
 #main .works .examples .work-card:hover .cards-items {
 	opacity: 1;
 }
@@ -453,137 +455,8 @@ body {
 	backface-visibility: hidden;
 }
 
-.contact {
-	display: block;
-	.contact-title {
-		h1 {
-			color: #ef8354;
-			font-weight: 400;
-			text-align: end;
-			margin-right: 20px;
-		}
-	}
-	.contact-content {
-		.contact-form {
-			form {
-				width: 60%;
-				margin: 0 auto;
-				font-family: "Nunito";
-				h2 {
-					text-align: center;
-					color: #f2f2f2;
-					font-weight: 700;
-				}
-				.input-box {
-					text-align: center;
-					textarea {
-						font-family: "Nunito";
-						width: 100%;
-						height: 200px;
-						font-size: 18px;
-						padding-top: 10px;
-						padding-left: 20px;
-						background-color: #f2f2f2;
-					}
-				}
-				.about-you {
-					display: flex;
-					.input-box {
-						width: 100%;
-						margin-left: 20px;
-						input {
-							width: 100%;
-							height: 50px;
-							background-color: #f2f2f2;
-							border: none;
-							font-size: 18px;
-							padding-left: 20px;
-						}
-						._error {
-							box-shadow: 0 0 15px red;
-						}
-					}
-					.input-box:first-child {
-						margin-left: 0;
-					}
-				}
-				.sub {
-					display: flex;
-					.contact-btn {
-						width: 100%;
-						display: block;
-						justify-content: space-between;
-						.submit-button {
-							input {
-								cursor: pointer;
-								margin-top: 30px;
-								padding: 10px 30px;
-								background-color: #ef8354;
-								border: none;
-								color: #f2f2f2;
-								font-size: 18px;
-								transition: 0.5s;
-								font-family: "Goldman";
-							}
-						}
-					}
-					.contact-social {
-						display: flex;
-						.sci {
-							margin-top: 25px;
-							display: flex;
-							li {
-								margin-left: 20px;
-								a {
-									text-align: center;
-									font-size: 36px;
-									color: #f2f2f2;
-									opacity: 0.5;
-									transition: 0.5s;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
 
-.contact .contact-content .contact-form .form__body {
-	position: relative;
-}
-.contact .contact-content .contact-form .form__body::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.2) url("/images/loading.gif") center/500px no-repeat;
-	width: 100%;
-	height: 100%;
-	opacity: 1;
-	visibility: hidden;
-	transition: all 0.5s ease 0s;
-}
-.contact .contact-content .contact-form .form__body ._sending::after {
-	opacity: 1;
-	visibility: visible;	
-}
 
-.contact .contact-content .contact-form form .checkbox ._error {
-	box-shadow: 0 0 15px red;
-}
-
-.contact .contact-content .contact-form form .about-you .input-box ._error {
-	box-shadow: 0 0 15px red;
-}
-.contact .contact-content .contact-form form .sub .contact-social .sci li a:hover {
-	opacity: 1;
-}
-.contact .contact-content .contact-form form .contact-btn .submit-button input:hover {
-	background-color: #f2f2f2;
-	color: #2d3142;
-}
 footer {
 	h1 {
 		margin: 0;

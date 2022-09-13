@@ -7,19 +7,47 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animate.css"/>
+  <link rel="stylesheet" href="css/animate.css" />
   <script src="https://kit.fontawesome.com/71ff812372.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Nunito:wght@400;700&display=swap"
     rel="stylesheet">
   <script src="js/wow.min.js"></script>
-  <script src="js/mail.js"></script>
+  <!-- <script src="js/mail.js"></script> -->
   <script>
     new WOW().init();
   </script>
 
+ 
+
 </head>
 
 <body>
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v9.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="102463695034293" theme_color="#4f5d75">
+  </div>
+
+
+
   <nav class="navbar">
     <span class="open-slide">
       <a href="#!" onclick="openSlideMenu(x)">
@@ -58,7 +86,7 @@
           </div>
           <div class="home-text">
             <p class="wow fadeInRight">Responsive Design, HTML, CSS, jQuery</p>
-            
+
           </div>
           <div class="btn-more wow fadeInUp">
             <a href="#omnie">More</a>
@@ -85,7 +113,8 @@
           </div>
 
           <div class="about-text">
-            <p class="wow fadeInRight">Hi! I am Oleksii Kapturevskyi, a web developer focused on crafting great web experiences. Coding have
+            <p class="wow fadeInRight">Hi! I am Oleksii Kapturevskyi, a web developer focused on crafting great web
+              experiences. Coding have
               been my passion since the days I started working with computers but I found myself into web development
               since 2018. I enjoy creating beautifully designed, intuitive and functional websites.
             </p>
@@ -128,13 +157,12 @@
             <div class="flip-card-back">
               <h1>Web Design</h1>
               <p>Adobe Photoshop,<br> Adobe Ilustrator</p>
-
             </div>
           </div>
         </div>
-
       </div>
     </div>
+    
     <!-- Skills end-->
     <!-- Works -->
     <div class="works wow fadeInUpBig" id="exam">
@@ -202,10 +230,11 @@
 
       <div class="contact-content wow fadeInUp">
         <div class="contact-form">
-          <form action="#" id="form" class="form__body">
+          <form action="contactform.php" id="form" class="form__body" method="POST">
             <h2>Send Messange</h2>
             <div class="input-box">
-              <textarea name="message" id="formMessage" class="form__input" placeholder="Write your message here"></textarea>
+              <textarea name="message" id="formMessage" class="form__input"
+                placeholder="Write your message here"></textarea>
             </div>
             <h2>About You</h2>
             <div class="about-you">
@@ -213,18 +242,20 @@
                 <input id="formName" class="form__input _req" type="text" name="name" placeholder="Full Name">
               </div>
               <div class="input-box">
-                <input id="formEmail" class="form__input _req _email" type="text" name="email" placeholder="Email Adres">
+                <input id="formEmail" class="form__input _req _email" type="text" name="email"
+                  placeholder="Email Adres">
               </div>
             </div>
             <div class="checkbox">
               <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
-              <label for="formAgreement" class="checkbox__label">I agree</label>
+              <label for="formAgreement" class="checkbox__label" style="color: white;">I agree<a href="policy.html"
+                  style="color: orange; text-decoration: none;"> Privacy policy</a></label>
             </div>
             <div class="sub">
-              <!-- <button type="submit">Send</button> -->
+              <!-- <button type="submit" name="submit">Send Mail</button> -->
               <div class="contact-btn">
                 <div class="submit-button">
-                  <input type="submit" value="Send">
+                  <input type="submit" name="submit" value="Send">
                 </div>
               </div>
               <div class="contact-social">
@@ -238,7 +269,7 @@
                 </ul>
               </div>
             </div>
-            
+
 
 
           </form>
@@ -256,10 +287,10 @@
 
 
 
-  
+
   <script src="js/jquery-3.5.1.slim.min.js"></script>
   <script src="js/script.js"></script>
-  
+
 
 </body>
 

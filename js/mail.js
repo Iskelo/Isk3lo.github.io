@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
 		e.preventDefault();
 		var error = formValidate(form);
 
-		var formDate = new FormDate(form);
+		var formData = new FormData(form);
 
 		if (error === 0) {
 			form.classList.add('_sending');
 			var response = await fetch('sendmail.php', {
 				method: 'POST',
-				body:  formDate
+				body:  formData
 			});
 			if (response.ok) {
 				var result = await response.json();
